@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:300,400');
+.dashboard{
+    width:100%;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* sidebar */
+.sidebar{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 100vh;
+    width:270px;
+    /* background-color: #EF3d32; */
+    background-color: #c91c1c;
+    border-right: #dacdcd solid;
+    
+
+}
+
+.sidebar .logo{
+    width:100%;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sidebar .logo span{
+    color: white;
+}
+
+.sidebar .menu-item {
+    height: 40px;
+    width:100%;
+    padding: 10px 5px 10px 20px;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.sidebar .menu-item:hover{
+    color:#EF3d32 !important;
+    background: #ffffff;
+    
+}
+
+.sidebar .menu-item a{
+    color: #fff;
+}
+.sidebar .menu-item a:hover{
+    color: #EF3d32;
+    text-decoration: none;
+}
+
+
+
+
+/* admin header */
+.admin-header{
+    position: fixed;
+    top:0;
+    left:270px;
+    width: calc(100% - 270px);
+    height: 70px;
+    background: #ffebee;
+    display:flex;
+    padding: 0 20px;
+    z-index: 8;
+    border-bottom: 1px solid rgb(209, 207, 207);
+}
+
+.admin-header .logo{
+    font-size:20px;
+    font-weight: 900;
+    flex:6;
+    margin-top: 20px;
+}
+
+.admin-header .logo p a{
+    color: #343434;
+    text-decoration: none;
+}
+.admin-header .logo p a:hover{
+    color: #000;
+}
+
+.admin-header .logo p{
+    cursor:pointer;
+}
+
+.admin-header .header-menu{
+    flex:6;
+}
+
+
+.admin-header .header-menu i{
+    float: right;
+    margin-right: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+/* main content */
+.main-content{
+    position: static;
+    margin-top:70px;
+    margin-left:270px;
+    width: calc(100% - 270px);
+    background-color: #fff;
+    z-index: -8;
+}
+
+
+/* mobile navigation */
+.mobile-navigation{
+    display:flex;
+    margin-top:70px;
+    width: 100%;
+    background: #e91e63;
+    display: none;
+}
+
+.nav-btn{
+    width: 100%;
+    height: 60px;
+}
+
+.mobile-navigation img{
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    margin-top:10px;
+    margin-left: 20px;
+}
+
+.mobile-navigation .nav-btn i{
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 24px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+
+.mobile-nav{
+    /* background: #ece6e6; */
+    background: #ffffff;
+    z-index:8;
+}
+
+.mobile-navigation .menu-item {
+    height: 40px;
+    width:100%;
+    padding: 10px 5px 10px 20px;
+    color: #EF3d32;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mobile-navigation .menu-item:hover{
+    background: #EF3d32;
+    color: #ece6e6;
+}
+
+.mobile-navigation .menu-item a{
+    color: #EF3d32;
+    text-decoration: none;
+}
+.mobile-navigation .menu-item a:hover{
+   color: white;
+}
+
+/* graphs styling */
+
+.dashboard-graphs{
+    position: static;
+}
+
+.quick-info h4{
+    font-size: 28px;
+    font-weight: 600;
+    padding:10 0;
+}
+.dashboard-graphs .col-md-4 .card{
+    height: 170px;
+}
+
+.dashboard-graphs .col-md-4 .card h5{
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+}
+
+.dashboard-graphs .col-md-4 .card p{
+    color: white;
+    padding-left: 10px;
+}
+
+/* adminslider css */
+.admin-slider h4{
+    margin-top: 20px;
+    font-weight: 400;
+}
+.admin-slider img{
+    width: 100px;
+}
+
+/* admin gallery css */
+.admin-gallery{
+    width:96%;
+    text-align: center;
+}
+
+.admin-gallery h4{
+    text-align: left;
+    padding: 10px;
+}
+.admin-gallery h4 span{
+    color: #fff;;
+    font-size: 14px;
+    float: right;
+    background-color: #EF3d32;
+    padding:5px;
+    cursor: pointer
+}
+.admin-gallery img{
+    height: 200px;
+}
+
+.admin-gallery table i{
+    color:red;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.admin-gallery table i:first-child{
+    color: blue;
+}
+
+/* add gallery */
+.add-gallery form{
+    width: 80%;
+}
+
+/* admin-donor*/
+.admin-donor h4{
+    font-size: 26px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.admin-donor h4 span{
+    background-color: #EF3d32;
+    padding: 0 10px 5px 10px;
+    float: right;
+    cursor: pointer;
+}
+.admin-donor h4 span a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;;
+}
+
+.admin-donor table i{
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* donor detail page css */
+.donor-detail{
+    padding: 30px 10px;
+}
+
+.donor-detail img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.donor-detail h2{
+    padding-top: 30px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.donor-detail p{
+    color: #343434;
+    font-size:15px;
+}
+
+.donor-detail i{
+    color: #e91e63;
+}
+
+.donor-detail h4{
+    font-weight: 600;
+}
+
+/* announcements */
+.announcement-lists{
+    padding: 25px 5px;
+}
+.announcement-lists h4{
+    font-size: 26px;
+    font-weight: 600;
+}
+.announcement-lists table i{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.announcement-lists span{
+    font-size: 14px;
+    background-color: #EF3d32;
+    padding:5px 7px;
+    float: right;
+    cursor: pointer;
+}
+.announcement-lists span a{
+   color:white;
+} 
+.announcement-lists span a:hover{
+    text-decoration: none;
+ } 
+
+ .announcement-detail h4{
+    padding: 20px 5px;
+ }
+
+ /* stock */
+ .stock h4{
+    padding: 20px 5px;     
+ }
+
+ .stock table i{
+     padding: 3px 6px;
+ }
+
+ .stock h4 span{
+    font-size: 14px;
+    background-color: #EF3d32;
+    padding:5px 7px;
+    float: right;
+    cursor: pointer;
+}
+
+.stock  h4 a span{
+    color:white;
+ } 
+
+.stock h4 a span:hover{
+     text-decoration: none;
+  } 
+
+.stock table i{
+    cursor: pointer;
+}
+
+/* request styling */
+.request h4{
+    padding: 20px 5px;
+}
+.request table i{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/*media queries */
+
+@media(max-width: 768px){
+    .sidebar{
+        display: none;
+    }
+
+    .admin-header{
+        width:100%;
+        left: 0;
+        background-color: #EF3d32;
+        border:none;
+    }
+
+    .admin-header .header-menu i{
+        float: right;
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+
+    .main-content{
+        margin-left:0;
+        margin-top:0;
+        width: 100%;
+    }
+
+    .mobile-navigation{
+        display: block;
+        margin-top: 70px; 
+    }
+
+    .admin-slider img{
+        width: 50px;
+    }
+
+    .admin-slider th, td{
+        font-size: 12px;
+    }
+
+    .admin-gallery img{
+        height: 80px;
+    }
+
+    .add-gallery{
+        width:96%;
+        margin: auto;
+    }
+    .add-gallery form{
+        width: 80%;
+        margin:auto;
+    }
+    .add-gallery h4{
+        text-align: center;
+        font-size: 18px;
+
+    }
+    /* update slider */
+    .update-slider h4{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    /* admin donors */
+    .admin-donor{
+        width: 90%;
+    }
+    .admin-donor h4{
+        font-size: 16px;
+        font-weight: 3500;
+        padding-top: 15;
+        padding-bottom: 5px;
+    }
+    .admin-donor table i{
+        font-size: 11px;
+        padding: 3px 4px;
+    }
+
+    /* donor detail page css */
+    .donor-detail{
+        padding: 15px 5px;
+    }
+
+    .donor-detail img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .donor-detail h2{
+        padding-top: 10px;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .donor-detail p{
+        font-size:13px;
+    }
+
+    /* announcements */
+    .announcement-lists{
+        padding: 15px 2px;
+    }
+    .announcement-lists h4{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .announcement-lists table i{
+        padding: 3px 5px;
+    }
+
+}
+
